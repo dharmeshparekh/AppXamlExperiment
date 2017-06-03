@@ -9,7 +9,7 @@
         <Image Source="Car.jpg" Aspect="AspectFill"></Image>
         <Label Text="About Vehicle Service - hjdh hghghfdj fhgfhgfg fdhgjfhgj fhfgjhfjghfdjhg rtirutiu iurtiruti dnfdshf hkdhfgdshg eyuewy eywuey uyewuew uewytuew uyewuty  uewytu uyewtwetywuety sdghhsgh gfhgfh asas dsfkliukhj hfgfhghfdjg hghghfghghgfhg hgfhgf ghgh hghghgf hghghgf hghghghgh ghgfhgfhgf gfhfghgfhgf ghfjghfjdghjfdhgjfd hfgjfhjgf hjfhgjfhg hfdjhgjfd" FontSize="Medium" HorizontalTextAlignment="Start"></Label>
         <StackLayout Orientation="Horizontal" Spacing="140" VerticalOptions="End">
-            <Button Text="Register"></Button>
+            <Button Text="Register" Clicked="Button_Clicked"></Button>
             <Button Text="Login"></Button>
         </StackLayout>
     </StackLayout>

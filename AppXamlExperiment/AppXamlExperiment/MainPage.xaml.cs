@@ -13,5 +13,12 @@ namespace AppXamlExperiment
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            int a = 1;
+            int b = 0;
+            int c = a / b;
+        }
     }
 }
