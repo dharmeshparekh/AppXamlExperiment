@@ -1,4 +1,5 @@
 ﻿using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Crashes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace AppXamlExperiment
             }
             catch (Exception)
             {
-
+                Crashes.GenerateTestCrash();                
                 throw;
             }
             
