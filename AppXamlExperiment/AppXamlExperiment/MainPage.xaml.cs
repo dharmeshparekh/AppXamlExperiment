@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Azure.Mobile;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,18 @@ namespace AppXamlExperiment
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            int a = 1;
-            int b = 0;
-            int c = a / b;
+            try
+            {
+                int a = 1;
+                int b = 0;
+                int c = a / b;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }

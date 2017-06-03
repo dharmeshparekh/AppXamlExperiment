@@ -26,8 +26,9 @@ namespace AppXamlExperiment
                    "ios={Your iOS App secret here}",
                    typeof(Analytics), typeof(Crashes));
             MobileCenterLog.Info("Info", "Application started");
-            
-            
+            Crashes.Enabled = true;
+            Analytics.TrackEvent("Start");
+
         }
 
         protected override void OnSleep()
