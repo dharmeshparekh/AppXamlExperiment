@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 using Xamarin.Forms;
 
@@ -18,7 +21,11 @@ namespace AppXamlExperiment
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            MobileCenter.Start("android=5c6670b8-cac0-4952-872c-3b31e156beaa;" +
+                   "uwp={Your UWP App secret here};" +
+                   "ios={Your iOS App secret here}",
+                   typeof(Analytics), typeof(Crashes));
+            MobileCenterLog.Info("Info", "Application started");
         }
 
         protected override void OnSleep()
