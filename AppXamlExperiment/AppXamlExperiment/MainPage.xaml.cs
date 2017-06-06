@@ -1,4 +1,5 @@
-﻿using Microsoft.Azure.Mobile;
+﻿using AppXamlExperiment.Pages;
+using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Crashes;
 using System;
 using System.Collections.Generic;
@@ -16,13 +17,12 @@ namespace AppXamlExperiment
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
             try
             {
-                int a = 1;
-                int b = 0;
-                int c = a / b;
+                Register registerpage = new Register();
+                await Navigation.PushModalAsync(registerpage);
             }
             catch (Exception)
             {
@@ -30,6 +30,12 @@ namespace AppXamlExperiment
                 throw;
             }
             
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Login loginpage = new Login();
+            await Navigation.PushModalAsync(loginpage);
         }
     }
 }

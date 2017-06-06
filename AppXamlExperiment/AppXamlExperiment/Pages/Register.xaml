@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamlExperiment.Pages.Register">
+
+    <StackLayout Margin="10,20,10,10" Padding="10" Spacing="7" HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Registration" BackgroundColor="Yellow" TextColor="Black" FontSize="Medium" FontAttributes="Bold"  HorizontalTextAlignment="Center"></Label>
+        <Entry Placeholder="Name" FontSize="Small"></Entry>
+        <Entry Placeholder="Mobile" FontSize="Small"></Entry>
+        <Entry Placeholder="Email" FontSize="Small"></Entry>
+        <Entry Placeholder="Password" IsPassword="True"  FontSize="Small"></Entry>
+        <Entry Placeholder="Confirm Password" FontSize="Small"></Entry>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Register" VerticalOptions="End" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

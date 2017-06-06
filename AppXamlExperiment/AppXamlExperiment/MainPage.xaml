@@ -4,13 +4,18 @@
              xmlns:local="clr-namespace:AppXamlExperiment"
              x:Class="AppXamlExperiment.MainPage">
 
-    <StackLayout Margin="10,20,10,10" Padding="10">
-        <Label Text="Vehicle Service" FontSize="Large" FontAttributes="Bold"  HorizontalTextAlignment="Center"></Label>
+    <StackLayout Margin="10,20,10,10" Padding="10" Spacing="7">
+        <Label Text="Convenient Car Servicing and Repairs" BackgroundColor="Yellow" TextColor="Black" FontSize="Large" FontAttributes="Bold"  HorizontalTextAlignment="Center"></Label>
         <Image Source="Car.jpg" Aspect="AspectFill"></Image>
-        <Label Text="About Vehicle Service - hjdh hghghfdj fhgfhgfg fdhgjfhgj fhfgjhfjghfdjhg rtirutiu iurtiruti dnfdshf hkdhfgdshg eyuewy eywuey uyewuew uewytuew uyewuty  uewytu uyewtwetywuety sdghhsgh gfhgfh asas dsfkliukhj hfgfhghfdjg hghghfghghgfhg hgfhgf ghgh hghghgf hghghgf hghghghgh ghgfhgfhgf gfhfghgfhgf ghfjghfjdghjfdhgjfd hfgjfhjgf hjfhgjfhg hfdjhgjfd" FontSize="Medium" HorizontalTextAlignment="Start"></Label>
+        <Label Text="30+ garage network spread across Pune" FontSize="Small" TextColor="Blue" HorizontalTextAlignment="Start"></Label>
+        <Label Text="79 point inspection at your doorstep from industry expert service advisors" TextColor="Blue" FontSize="Small" HorizontalTextAlignment="Start"></Label>
+        <Label Text="Post inspection get quotations from a multi brand, local and authorised center" TextColor="Blue" FontSize="Small" HorizontalTextAlignment="Start"></Label>
+        <Label Text="Free pick, work supervision at the garage and drop from your home or office" TextColor="Blue" FontSize="Small" HorizontalTextAlignment="Start"></Label>
+        <Label Text="Guaranteed OES parts used in all our garages" TextColor="Blue" FontSize="Small" HorizontalTextAlignment="Start"></Label>
+        <Label Text="High quality car servicing and maintenance" TextColor="Blue" FontSize="Small" HorizontalTextAlignment="Start"></Label>
         <StackLayout Orientation="Horizontal" Spacing="140" VerticalOptions="End">
             <Button Text="Register" Clicked="Button_Clicked"></Button>
-            <Button Text="Login"></Button>
+            <Button Text="Login" Clicked="Button_Clicked_1"></Button>
         </StackLayout>
     </StackLayout>
 
