@@ -4,8 +4,13 @@
              xmlns:local="clr-namespace:AppXamlExperiment"
              x:Class="AppXamlExperiment.MainPage">
 
+
     <StackLayout Margin="10,20,10,10" Padding="10" Spacing="7">
-        <Label Text="Convenient Car Servicing and Repairs" BackgroundColor="Yellow" TextColor="Black" FontSize="Large" FontAttributes="Bold"  HorizontalTextAlignment="Center"></Label>
+        <Label Text="Convenient Car Servicing and Repairs" TextColor="Black" FontSize="Large" FontAttributes="Bold"  HorizontalTextAlignment="Center">
+            <Label.Effects>
+                <local:YellowEffect/>
+            </Label.Effects>
+        </Label>
         <Image Source="Car.jpg" Aspect="AspectFill"></Image>
         <Label Text="30+ garage network spread across Pune" FontSize="Small" TextColor="Blue" HorizontalTextAlignment="Start"></Label>
         <Label Text="79 point inspection at your doorstep from industry expert service advisors" TextColor="Blue" FontSize="Small" HorizontalTextAlignment="Start"></Label>

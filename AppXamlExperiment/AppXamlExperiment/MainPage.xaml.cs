@@ -22,7 +22,7 @@ namespace AppXamlExperiment
             try
             {
                 Register registerpage = new Register();
-                await Navigation.PushModalAsync(registerpage);
+                await Navigation.PushModalAsync(registerpage, false);
             }
             catch (Exception)
             {
@@ -35,7 +35,7 @@ namespace AppXamlExperiment
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
             Login loginpage = new Login();
-            await Navigation.PushModalAsync(loginpage);
+            await Navigation.PushModalAsync(loginpage, false);
         }
     }
 }
